@@ -75,6 +75,10 @@ gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles', 'sass'], func
   gulp.watch('./src/styles/*.css', function() {
     gulp.run('styles');
   });
+  gulp.watch('./src/sass/{,*/}*.{scss,sass}', function() {
+    gulp.run('sass');
+  });
+
 });
 
 /*
