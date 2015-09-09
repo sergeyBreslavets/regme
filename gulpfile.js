@@ -35,7 +35,7 @@ gulp.task('imagemin', function() {
 // minify new or changed HTML pages
 gulp.task('htmlpage', function() {
   var htmlSrc = './src/*.html',
-      htmlDst = './build';
+      htmlDst = './build/';
 
   gulp.src(htmlSrc)
     .pipe(changed(htmlDst))
@@ -78,6 +78,10 @@ gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles', 'sass'], func
   gulp.watch('./src/sass/{,*/}*.{scss,sass}', function() {
     gulp.run('sass');
   });
+  gulp.watch('./src/images/**/*', function() {
+    gulp.run('imagemin');
+  });
+
 
 });
 
