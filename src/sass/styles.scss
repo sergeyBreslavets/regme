@@ -20,7 +20,7 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-//@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 //@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 /*
 // Components
@@ -55,7 +55,7 @@
 // Utility classes
 //@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 //@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
-
+@import "_modules";
 .home {
   background: url(../images/background_home.jpg) no-repeat ;
 	height: 1050px;
@@ -95,12 +95,12 @@ border: 1px red solid;
 	 background: url(../images/background_control_work.jpg) no-repeat ;
 	height: 1050px;
 	color: #FFF;
-	width: 100%;
+
 }
 .control_work__block-left-phone_control_work{
      
 
-	  border: 1px solid red;
+	//  border: 1px solid red;
 	background: url(../images/control_wor_left_iphone.png) no-repeat   center ;
 	 
 	 height: 1050px;
@@ -110,11 +110,24 @@ border: 1px red solid;
 	background: url(../images/background_monitoring.jpg) no-repeat ;
 	height: 1050px;
 	color: #FFF;
-	width: 100%;
+	//border: 1px solid red;
+	
 }
 .monitoring__block-right-phone_monitoring{
-	  border: 1px solid red;
-	background: url(../images/monitoring_iphone.png) no-repeat   center ;
+	 // border: 1px solid red;
+	background: url(../images/monitoring_iphone.png) no-repeat    ;
 	 
 	 height: 1050px;
 }  
+.contextual_advertising{
+	background: url(../images/background_contextual_advertising.jpg) no-repeat ;
+	height: 1050px;
+	color: #FFF;
+	//border: 1px solid red;
+}
+.contextual_advertising__block-left-phone_contextual_advertisin{
+	  border: 1px solid red;
+	background: url(../images/contextual_advertising_iphone.png) no-repeat    ;
+	 //border: 1px solid red;
+	 height: 1050px;
+}
